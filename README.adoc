@@ -324,12 +324,12 @@ Known command ids are put into the following list:
 | <<PACKET_SET_COLOR>>
 
 | _0x37_
-| Unknown, wrong addressing
-| ZONE?, DEVICE?
-| ???
+| Set color loop
+| ZONE, DEVICE
+| <<PACKET_SET_COLOR_LOOP>>
 
 | _0x38_
-| Unknown, wrong addressing
+| Set device physical default
 | ZONE?, DEVICE?
 | ???
 
@@ -947,6 +947,26 @@ Sets the RGB color value of the addressed device or zone.
 | uint64_t: See <<Device and Zone Addressing>>
 
 |===
+
+=== PACKET_SET_COLOR_LOOP
+
+Sets a color loop to a device or zone
+
+.Request data
+|===
+| Byte(s) | Description | Data type
+
+| 16
+| color loop on/off
+| uint8_t: bool
+
+| 17
+| Speed of color loop
+| uint8_t
+
+| 18
+| ??
+| ??
 
 === PACKET_ACTIVATE_SCENE
 
