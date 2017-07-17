@@ -968,6 +968,8 @@ Sets a color loop to a device or zone
 | ??
 | ??
 
+|===
+
 === PACKET_ACTIVATE_SCENE
 
 Activates a predefined scene on the addressed device or zone.
