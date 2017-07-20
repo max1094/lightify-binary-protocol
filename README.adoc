@@ -595,8 +595,8 @@ Known command ids are put into the following list:
 | <<PACKET_GET_WIFI_CONFIGURATION>>
 
 | _0xE4_
-| Unknown, activates light (with 1 byte data) - seems to reset the light
-| BROADCAST?
+| Factory reset and reboot
+| BROADCAST
 | ???
 
 | _0xE5_
